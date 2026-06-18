@@ -86,7 +86,7 @@
 
   /* Layout */
   --container-max:  1200px;
-  --header-height:  96px;
+  --header-height:  72px;
 }
 
 /* ─── Reset & Base ──────────────────────────────────────────────── */
@@ -378,7 +378,7 @@ address { font-style: normal; }
 }
 
 .nav-logo-img {
-  height: 76px;
+  height: 48px;
   width: auto;
   display: block;
   object-fit: contain;
@@ -396,7 +396,7 @@ address { font-style: normal; }
 }
 
 .footer-logo-img {
-  height: 100px;
+  height: 56px;
   width: auto;
   display: block;
   object-fit: contain;
