@@ -378,7 +378,7 @@ address { font-style: normal; }
 }
 
 .nav-logo-img {
-  height: 60px;
+  height: 90px;
   width: auto;
   display: block;
   object-fit: contain;
@@ -396,7 +396,7 @@ address { font-style: normal; }
 }
 
 .footer-logo-img {
-  height: 72px;
+  height: 100px;
   width: auto;
   display: block;
   object-fit: contain;
@@ -406,6 +406,7 @@ address { font-style: normal; }
 .footer-logo:hover .footer-logo-img {
   opacity: 0.75;
 }
+
 
 
 
