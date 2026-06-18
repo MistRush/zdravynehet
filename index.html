@@ -147,20 +147,52 @@
           </p>
         </div>
 
-        <!-- Photo-first comparison visual -->
-        <figure class="comparison-visual">
-          <img
-            src="images/comparison_panel.png"
-            alt="Srovnávací infopanel – Chirurgický zákrok vs. Podologie u Adama – bolest, neschopnost, stav nehtu, hojení"
-            class="comparison-img"
-            width="1400"
-            height="900"
-            loading="lazy"
-          />
-          <figcaption class="comparison-caption">
-            Srovnání klasického chirurgického přístupu a moderní podologické péče
-          </figcaption>
-        </figure>
+        <!-- Clean 2D Comparison Table -->
+        <div class="comp-table-wrapper" role="region" aria-label="Srovnávací tabulka – Chirurgický zákrok vs. Podologie u Adama">
+          <table class="comp-table">
+            <thead>
+              <tr>
+                <th class="col-feature" aria-hidden="true"></th>
+                <th class="col-old" scope="col">Chirurgický zákrok</th>
+                <th class="col-new" scope="col">
+                  <span class="col-new-highlight">Podologie u Adama</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="cell-feature" scope="row">Bolest</td>
+                <td class="cell-old">Ano — lokální anestezie nutná</td>
+                <td class="cell-new">Žádná</td>
+              </tr>
+              <tr>
+                <td class="cell-feature" scope="row">Pracovní neschopnost</td>
+                <td class="cell-old">2–3 týdny</td>
+                <td class="cell-new">Žádná</td>
+              </tr>
+              <tr>
+                <td class="cell-feature" scope="row">Stav nehtu</td>
+                <td class="cell-old">Částečně odstraněn</td>
+                <td class="cell-new">Netknutý, zdravý</td>
+              </tr>
+              <tr>
+                <td class="cell-feature" scope="row">Hojení po zákroku</td>
+                <td class="cell-old">Několik týdnů</td>
+                <td class="cell-new">Ihned pokračujete</td>
+              </tr>
+              <tr>
+                <td class="cell-feature" scope="row">Úleva od bolesti</td>
+                <td class="cell-old">Až po zahojení rány</td>
+                <td class="cell-new">Druhý den</td>
+              </tr>
+              <tr>
+                <td class="cell-feature" scope="row">Kde probíhá</td>
+                <td class="cell-old">Nemocnice nebo ambulance</td>
+                <td class="cell-new">U vás doma</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
         <!-- Personal quote – clean typography, no box -->
         <blockquote class="quote-block">

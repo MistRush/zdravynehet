@@ -767,35 +767,106 @@ address { font-style: normal; }
   border-bottom: 1px solid var(--color-border);
 }
 
-/* Photo visual */
-.comparison-visual {
+/* Clean 2D Comparison Table */
+.comp-table-wrapper {
   margin: 0 0 var(--space-12);
-  border: 1px solid var(--color-border);
-  overflow: hidden;
-  box-shadow: var(--shadow-lg);
-}
-
-.comparison-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.comparison-visual:hover .comparison-img {
-  transform: scale(1.015);
-}
-
-.comparison-caption {
-  padding: var(--space-3) var(--space-5);
-  font-size: var(--size-xs);
-  font-weight: 500;
-  letter-spacing: 0.05em;
-  color: var(--color-text-light);
-  text-transform: uppercase;
-  border-top: 1px solid var(--color-border);
+  overflow-x: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(26, 38, 64, 0.04);
   background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+}
+
+.comp-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  min-width: 640px;
+}
+
+.comp-table th,
+.comp-table td {
+  padding: var(--space-5) var(--space-6);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.comp-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.comp-table th {
+  font-size: var(--size-xs);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background-color: var(--color-off-white);
+  border-bottom: 2px solid var(--color-border);
+}
+
+.col-old {
+  color: #ef4444; /* subtle red */
+  width: 32%;
+}
+
+.col-new {
+  color: #10b981; /* subtle green */
+  width: 38%;
+  background-color: rgba(16, 185, 129, 0.03);
+}
+
+.col-new-highlight {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.col-new-highlight::before {
+  content: '✓';
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  background-color: #10b981;
+  color: white;
+  border-radius: 50%;
+  font-size: 10px;
+}
+
+.cell-feature {
+  font-size: var(--size-sm);
+  font-weight: 600;
+  color: var(--color-navy);
+  width: 30%;
+  border-right: 1px solid var(--color-border);
+  background-color: var(--color-white);
+}
+
+.cell-old {
+  font-size: var(--size-sm);
+  color: var(--color-text-muted);
+  border-right: 1px solid var(--color-border);
+  background-color: var(--color-white);
+}
+
+.cell-new {
+  font-size: var(--size-sm);
+  font-weight: 600;
+  color: var(--color-navy);
+  background-color: rgba(16, 185, 129, 0.03);
+}
+
+.comp-table tbody tr {
+  transition: background-color var(--transition-fast);
+}
+
+.comp-table tbody tr:hover .cell-feature,
+.comp-table tbody tr:hover .cell-old {
+  background-color: rgba(26, 38, 64, 0.015);
+}
+
+.comp-table tbody tr:hover .cell-new {
+  background-color: rgba(16, 185, 129, 0.06);
 }
 
 /* Quote block – pure typography, no box */
