@@ -27,7 +27,7 @@
           src="images/logo.png"
           alt="ZdravýNehet – Podologická péče, Mgr. Adam Žídek"
           class="nav-logo-img"
-          height="90"
+          height="76"
           loading="eager"
         />
       </a>
@@ -147,7 +147,7 @@
           </p>
         </div>
 
-        <!-- Clean 2D Comparison Table -->
+        <!-- Elevated UI Comparison Table -->
         <div class="comp-table-wrapper" role="region" aria-label="Srovnávací tabulka – Chirurgický zákrok vs. Podologie u Adama">
           <table class="comp-table">
             <thead>
@@ -155,38 +155,69 @@
                 <th class="col-feature" aria-hidden="true"></th>
                 <th class="col-old" scope="col">Chirurgický zákrok</th>
                 <th class="col-new" scope="col">
-                  <span class="col-new-highlight">Podologie u Adama</span>
+                  <div class="col-new-badge">Doporučeno</div>
+                  Podologie u Adama
                 </th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td class="cell-feature" scope="row">Bolest</td>
-                <td class="cell-old">Ano — lokální anestezie nutná</td>
-                <td class="cell-new">Žádná</td>
+                <td class="cell-feature" scope="row">
+                  <div class="feature-label">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    Bolest
+                  </div>
+                </td>
+                <td class="cell-old"><span class="status-negative">Ano</span> — lokální anestezie nutná</td>
+                <td class="cell-new"><span class="status-positive">Žádná</span></td>
               </tr>
               <tr>
-                <td class="cell-feature" scope="row">Pracovní neschopnost</td>
+                <td class="cell-feature" scope="row">
+                  <div class="feature-label">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                    Pracovní neschopnost
+                  </div>
+                </td>
                 <td class="cell-old">2–3 týdny</td>
-                <td class="cell-new">Žádná</td>
+                <td class="cell-new"><span class="status-positive">Žádná</span></td>
               </tr>
               <tr>
-                <td class="cell-feature" scope="row">Stav nehtu</td>
+                <td class="cell-feature" scope="row">
+                  <div class="feature-label">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    Stav nehtu
+                  </div>
+                </td>
                 <td class="cell-old">Částečně odstraněn</td>
                 <td class="cell-new">Netknutý, zdravý</td>
               </tr>
               <tr>
-                <td class="cell-feature" scope="row">Hojení po zákroku</td>
+                <td class="cell-feature" scope="row">
+                  <div class="feature-label">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    Hojení po zákroku
+                  </div>
+                </td>
                 <td class="cell-old">Několik týdnů</td>
                 <td class="cell-new">Ihned pokračujete</td>
               </tr>
               <tr>
-                <td class="cell-feature" scope="row">Úleva od bolesti</td>
+                <td class="cell-feature" scope="row">
+                  <div class="feature-label">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                    Úleva od bolesti
+                  </div>
+                </td>
                 <td class="cell-old">Až po zahojení rány</td>
                 <td class="cell-new">Druhý den</td>
               </tr>
               <tr>
-                <td class="cell-feature" scope="row">Kde probíhá</td>
+                <td class="cell-feature" scope="row">
+                  <div class="feature-label">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    Kde probíhá
+                  </div>
+                </td>
                 <td class="cell-old">Nemocnice nebo ambulance</td>
                 <td class="cell-new">U vás doma</td>
               </tr>
